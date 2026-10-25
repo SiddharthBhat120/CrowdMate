@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Join queues from your phone and keep your family safe in crowds with a scannable safety tag." />
+    <meta name="theme-color" content="#1d2a5b" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <title>CrowdMate</title>
+    <!--
+      Critical CSS: just enough to paint the header and a loading line before
+      the main stylesheet and JavaScript arrive. System fonts only, so there
+      is no font file blocking the first paint.
+    -->
+    <style>
+      html { background: #f3f5f9; color: #161c2e; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+      @media (prefers-color-scheme: dark) { html { background: #0f1426; color: #e9edf6; } }
+      body { margin: 0; }
+      .boot-bar { height: 56px; background: #1d2a5b; }
+      .boot-text { max-width: 680px; margin: 0 auto; padding: 32px 16px; opacity: 0.7; }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="boot-bar"></div>
+      <p class="boot-text">Loading CrowdMate…</p>
+    </div>
+    <noscript>CrowdMate needs JavaScript to show live queues and safety tags.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
