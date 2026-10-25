@@ -9,6 +9,18 @@ No app to install. Works on slow and dropping networks.
 
 ---
 
+## Screenshots
+
+| Home | Organizer dashboard |
+|---|---|
+| ![Home](screenshots/home.png) | ![Organizer dashboard](screenshots/organizer.png) |
+
+| Event page (phone) | Live token (phone) |
+|---|---|
+| <img src="screenshots/event.png" width="300" alt="Event page on a phone"> | <img src="screenshots/ticket.png" width="300" alt="Live token on a phone"> |
+
+---
+
 ## Run it
 
 ### 1. Install Node.js
